@@ -1,14 +1,19 @@
 {
-  "name": "depd",
+  "name": "chrome-depd",
   "description": "Deprecate all the things",
   "version": "1.0.1",
   "author": "Douglas Christopher Wilson <doug@somethingdoug.com>",
   "license": "MIT",
   "keywords": [
     "deprecate",
-    "deprecated"
+    "deprecated",
+    "chrome app",
+    "chromiumify"
   ],
-  "repository": "dougwilson/nodejs-depd",
+    "repository": {
+    "type": "git",
+    "url": "git://github.com/No9/chrome-depd.git"
+  },
   "devDependencies": {
     "benchmark": "1.0.0",
     "beautify-benchmark": "0.2.4",
@@ -26,9 +31,6 @@
     "node": ">= 0.6"
   },
   "scripts": {
-    "bench": "node benchmark/index.js",
-    "test": "mocha --reporter spec --bail test/",
-    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --no-exit test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
